@@ -7,6 +7,7 @@ public class first {
     public static int rNumber(int x, int y) {
         return (int) Math.floor(Math.random() * (y-x+1) + x);
     }
+
     public static void main(String[] args) {
 
         // chooses the number of random numbers and the range of the numbers.
