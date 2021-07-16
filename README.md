@@ -1,2 +1,2 @@
 # thing
-epic cringe thing.
+cringe.
