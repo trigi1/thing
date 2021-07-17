@@ -26,8 +26,20 @@ public class first {
         }
 
         // generates x random numbers from 1 to y
+        StringBuilder s = new StringBuilder();
+        String temp;
         for (int i = 0; i < x; i++) {
-            System.out.print(rNumber(1,y) + ", ");
+            if (i < x - 1) {
+                temp = rNumber(1, y) + ", ";
+            } else {
+                temp = Integer.toString(rNumber(1, y));
+            }
+            System.out.print(temp);
+            s.append(temp);
+            if (s.length() > 80) {
+                s = new StringBuilder();
+                System.out.print("\n");
+            }
         }
     }
 }
