@@ -1,5 +1,6 @@
 package com.trigi.thing;
 import java.lang.*;
+import java.util.*;
 
 public class first {
 
@@ -10,9 +11,12 @@ public class first {
 
     public static void main(String[] args) {
 
-        // chooses the number of random numbers and the range of the numbers.
-        int x = rNumber(1, 10);
-        int y = rNumber(1, 10);
+        // creates scanner, and asks the user for information.
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many random numbers do you want to print?");
+        int x = sc.nextInt();
+        System.out.println("What should the range of the random numbers be?");
+        int y = sc.nextInt();
 
         // makes sure it won't say "1 numbers"
         if (x == 1) {
@@ -23,7 +27,7 @@ public class first {
 
         // generates x random numbers from 1 to y
         for (int i = 0; i < x; i++) {
-            System.out.println(rNumber(1,y));
+            System.out.print(rNumber(1,y) + ", ");
         }
     }
 }
